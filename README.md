@@ -1,14 +1,15 @@
-# What do people on YouTube think about a COVID-19 vaccine?
-[wordCloud]
-This study has been done on the 25th of November 2020
+# What do people on YouTube think about a COVID-19 vaccine? Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
-COVID-19 vaccine: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
+![alt_text](graphs/word_cloud.png)
 
-This study has been realized on a sample of 58532 comments scraped from the most popular and relevant videos over the last 7 months (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the potential effectiveness, the receptiveness or even the feasability of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the US. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
+**Date: November 25th of  2020**
 
-[urls_dataset]
+This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the US. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
-Data preprocessing and Latent Dirichlet Allocation algorithm training
+![alt_text](img/urls.jpg)
+
+## Data preprocessing and Latent Dirichlet Allocation algorithm training
+
 The removal of relative stop words have mainly been done with the TF-IDF (Term Frequency - Inverse Document Frequency) algorithm. For a given document, words that had a score greater than the first quartile were kept and considered as relevant (75% of the distribution). Further processing was needed to get rid of general stop words, to remove special tokens such as emails or urls and to lemmatized the data.  
 
 [image cohérence values]

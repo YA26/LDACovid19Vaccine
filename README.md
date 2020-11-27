@@ -81,5 +81,6 @@ Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comme
 
 <p align="center"><img src="graphs/topics_contribution_over time.png" alt="..."></p>
 
-
-Thanks to Selva Prabhakaran https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
+## Credits
+- Thanks to Selva Prabhakaran https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
+- Youtube comment scraper code is partially grabbed from this repository: https://github.com/egbertbouman/youtube-comment-downloader

@@ -4,7 +4,7 @@
 <p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 
 
-This study has been done on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
+This study has been done on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months**. The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
 <p align="center"><img src="img/url.jpg" alt="..."></p>
 

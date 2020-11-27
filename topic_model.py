@@ -43,6 +43,9 @@ class DataPreprocessor():
         self.parser = parser_()
 
     def remove_special_tokens(self, text):
+        """
+        removes tokens such as @, an email, a url...
+        """
         tokens = [token.text for token in self.parser(text.strip().lower()) 
                    if True not in (token.like_email, 
                                    token.orth_.isspace(), 
@@ -85,16 +88,25 @@ class DataPreprocessor():
         return data_filtered, data_copy.reset_index(drop=True)
     
     def get_lemma(self, documents):
+        """
+        retrieves lemma of a word for all documents
+        """
         lemmas = [[WordNetLemmatizer().lemmatize(word) for word in document]
                       for document in documents]
         return lemmas
     
     def remove_stop_words(self, documents):
+        """
+        removes general stop words 
+        """
         result = [[word for word in document if word not in self.stop_words]
                 for document in documents]
         return result
                
     def doc2bow(self, documents):
+        """
+        convert a document into a bag of words
+        """
         dictionary = corpora.Dictionary(documents)
         corpus = [dictionary.doc2bow(document) for document in documents]
         return corpus, dictionary

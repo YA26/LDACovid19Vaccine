@@ -67,15 +67,17 @@ scraped_data = scraper.scrape_youtube_comments(urls=urls,
 ######## 2-DATA PREPROCESSING ##############
 ############################################
 """
+
+topic_2 = representative_docs[2]
 #Data preprocessor object
 data_preprocessor = DataPreprocessor(language="english", 
                                      spacy_model="en_core_web_md",
                                      parser_=English)
 
 #Keeping the most relevant terms in each document with tf-idf
-data_filtered, scraped_data_cleansed = data_preprocessor.filter_text_with_tf_idf(data=scraped_data, 
+data_filtered, scraped_data_cleansed = data_preprocessor.filter_text_with_tf_idf(data=topic_2, 
                                                                                  text_column="text",
-                                                                                 quantile_perct=.25)
+                                                                                 quantile_perct=.50)
 pickle.dump(scraped_data_cleansed, open(join("saved_data","scraped_data_cleansed.pkl"), 'wb'))
 
 #Lemmatizing the data
@@ -118,7 +120,7 @@ sent_topics_df = model.get_dominant_topics(ldamodel=ldamodel,
 pickle.dump(sent_topics_df, open(join("saved_data","sent_topics_df.pkl"), 'wb'))
 
 #Getting the most representative document(s) per topic
-representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=50)
+representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=1000)
 pickle.dump(representative_docs, open(join("saved_data","representative_docs.pkl"), 'wb'))
 
 #Getting the most discussed topics 
@@ -147,7 +149,7 @@ dataviz.plot_coherence_values(num_topics=NUM_TOPICS,
                               coherence_values=coherence_values,
                               path_to_save="graphs")
 #Topic WordCloud
-labels = ["US Election","Bible", "Vaccine"]
+labels = ["?","?", "?"]
 dataviz.plot_word_cloud(ldamodel=ldamodel,
                         width=2500,
                         height=1800,
@@ -175,4 +177,5 @@ date_dom_topic.drop("sort", inplace=True, axis=1)
 date_dom_topic = date_dom_topic.pivot(index='time', columns='Dominant_Topic', values='Frequency').reindex(date_dom_topic['time'].to_list())
 date_dom_topic = date_dom_topic.drop_duplicates()
 date_dom_topic.plot(kind='bar', stacked=True)
+
 

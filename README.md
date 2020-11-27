@@ -1,12 +1,12 @@
 # What do people on YouTube think about a COVID-19 vaccine? 
 ##  November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
-<img align="center" src="graphs/word_cloud.png" alt="...">
+<div style="text-align:center"><img align="center" src="graphs/word_cloud.png" alt="..."></div>
 
 
 This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
-<img align="center" src="img/url.jpg" alt="...">
+<div style="text-align:center"><img align="center" src="img/url.jpg" alt="..."></div>
 
 
 ## Data preprocessing and Latent Dirichlet Allocation(LDA) algorithm training
@@ -38,7 +38,7 @@ This topic is characterized by :
 -	The pandemic was planned by Bill Gates with Event 201
 -	People affirming that Big pharma is not to be trusted since Pfizer claimed a 90% vaccine effectiveness but sold 60% of their stock afterwards
 
-![alt_text](graphs/topic_1_contribution.png)
+![alt_text](graphs/topic_1_contribution.PNG)
 
 
 ### Topic 1(2% of all comments): COVID-19 vaccine and the mark of the beast
@@ -60,7 +60,7 @@ This topic is the most dominant and is most characterized by :
 -	People not accepting a mandatory vaccine since they think they won't constitute a danger to those who willingly choose to be vaccinated.
 -	People saying they are willing take it unless the vaccine is thoroughly tested.
 
-![alt_text](graphs/topic_3_contribution.png)
+![alt_text](graphs/topic_3_contribution.PNG)
 
 
 ## Topic contribution over time

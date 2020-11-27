@@ -3,6 +3,17 @@
 
 <p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 
+## Environment 
+- Python 3.8
+- gensim
+- spacy
+- nltk
+- matplotlib
+- selenium
+- BeautifulSoup
+- pandas
+- numpy
+- pyyoutube
 
 This study has been done on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months**. The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
@@ -71,3 +82,4 @@ Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comme
 <p align="center"><img src="graphs/topics_contribution_over time.png" alt="..."></p>
 
 
+Thanks to Selva Prabhakaran https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/

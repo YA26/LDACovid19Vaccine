@@ -118,7 +118,7 @@ sent_topics_df = model.get_dominant_topics(ldamodel=ldamodel,
 pickle.dump(sent_topics_df, open(join("saved_data","sent_topics_df.pkl"), 'wb'))
 
 #Getting the most representative document(s) per topic
-representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=1000)
+representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=20)
 pickle.dump(representative_docs, open(join("saved_data","representative_docs.pkl"), 'wb'))
 
 #Getting the most discussed topics 

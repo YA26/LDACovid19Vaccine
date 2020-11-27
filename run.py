@@ -67,17 +67,15 @@ scraped_data = scraper.scrape_youtube_comments(urls=urls,
 ######## 2-DATA PREPROCESSING ##############
 ############################################
 """
-
-topic_2 = representative_docs[2]
 #Data preprocessor object
 data_preprocessor = DataPreprocessor(language="english", 
                                      spacy_model="en_core_web_md",
                                      parser_=English)
 
 #Keeping the most relevant terms in each document with tf-idf
-data_filtered, scraped_data_cleansed = data_preprocessor.filter_text_with_tf_idf(data=topic_2, 
+data_filtered, scraped_data_cleansed = data_preprocessor.filter_text_with_tf_idf(data=scraped_data, 
                                                                                  text_column="text",
-                                                                                 quantile_perct=.50)
+                                                                                 quantile_perct=.25)
 pickle.dump(scraped_data_cleansed, open(join("saved_data","scraped_data_cleansed.pkl"), 'wb'))
 
 #Lemmatizing the data

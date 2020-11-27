@@ -48,7 +48,7 @@ This topic is characterized by:
 -	People saying the vaccine will alter people’s dna
 -	People saying Jesus is the way if people want to be saved
 
-![alt_text](graphs/topic_2_contribution.png)
+![alt_text](graphs/topic_2_contribution.PNG)
 
 
 ### Topic 2 (97% of all comments): Vaccine skepticism

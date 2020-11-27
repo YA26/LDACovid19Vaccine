@@ -1,4 +1,5 @@
-# What do people on YouTube think about a COVID-19 vaccine? Topic Modeling (LDA) on comments of popular and relevant YouTube videos
+# What do people on YouTube think about a COVID-19 vaccine? 
+# Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
 ![alt_text](graphs/word_cloud.png)
 
@@ -6,7 +7,7 @@
 
 This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
-![alt_text](img/url.jpg)
+<img align="center" src="img/url.jpg" alt="...">
 
 ## Data preprocessing and Latent Dirichlet Allocation(LDA) algorithm training
 

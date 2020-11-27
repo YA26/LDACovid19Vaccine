@@ -11,9 +11,9 @@ This study has been done on a sample of **58532 comments** scraped from the most
 
 ## Data preprocessing and Latent Dirichlet Allocation(LDA) algorithm training
 
-The removal of relative stop words have mainly been done with the TF-IDF (Term Frequency - Inverse Document Frequency) algorithm. For a given document, words that had a score greater than the first quartile were kept and considered as relevant (75% of the distribution). Further processing was needed to get rid of general stop words, to remove special tokens such as emails or urls and to lemmatized the data. 
+The removal of relative stop words have mainly been done with the **TF-IDF** (Term Frequency - Inverse Document Frequency) algorithm. For a given document, words that had a score greater than the first **quartile** were kept and considered as relevant (75% of the distribution). Further processing was needed to get rid of general stop words, to remove special tokens such as emails or urls and to lemmatize the data. 
 
-After training and looking at the cohérence values,  we can clearly see that 3 is the optimal number of topics. 
+After training and looking at the coherence values,  we can clearly see that 3 is the optimal number of topics. 
 
 <p align="center"><img src="graphs/coherence_values.png" alt="..."></p>
 

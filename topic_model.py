@@ -26,7 +26,6 @@ import pandas as pd
 import numpy as np
 import nltk
 import spacy
-import math
 
 
 """
@@ -52,7 +51,7 @@ class DataPreprocessor():
                                    token.orth_.startswith('http'))] 
         return tokens
     
-    def filter_text_with_tf_idf(self, data, text_column, quartile_perct=.25):
+    def filter_text_with_tf_idf(self, data, text_column, quantile_perct=.25):
         """
         removes relative stop words and irrelevant words
         """
@@ -74,7 +73,7 @@ class DataPreprocessor():
                 continue
       
             #Finding the quartile
-            quartile = np.quantile(positive_tf_idfs, quartile_perct) 
+            quartile = np.quantile(positive_tf_idfs, quantile_perct) 
             
             #Sorting words by value and keeping only those that are relevant
             relevant_words = df[df["TF-IDF"]>=quartile].index.to_list()

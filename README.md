@@ -1,5 +1,5 @@
 # What do people on YouTube think about a COVID-19 vaccine? 
-##  November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
+#### November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
 <p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 
@@ -21,7 +21,7 @@ After training and looking at the cohérence values,  we can clearly see that 3 
 ## Most discussed topic
 Topic number 2 is overwhelmingly the most discussed topic with a dominance in 96.7% of all comments.
 
-![alt_text](graphs/topic_contributions.png) 
+<p align="center"><img src="graphs/topic_contributions.png" alt="..."></p>
 
 On the MDS grah we can see a clear separation between those three topics. **Saliency** accounts for how truly informative a word is for determining a topic. Knowing the saliency of a term helps us evaluate those that profoundly characterize a topic. Saliency and **relevancy** are not synonymous : A word can be relevant in several topics but can only be salient in one.
 

@@ -15,7 +15,7 @@ The removal of relative stop words have mainly been done with the TF-IDF (Term F
 
 After training and looking at the cohérence values,  we can clearly see that 3 is the optimal number of topics. 
 
-![alt_text](graphs/coherence_values.png) 
+<div style="text-align:center"><img src="graphs/coherence_values.png" alt="..."></div>
 
 
 ## Most discussed topic
@@ -67,7 +67,7 @@ This topic is the most dominant and is most characterized by :
 
 Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comment sections of popular english YouTube videos. Opinions on a link between the vaccine and a new world order or the vaccine and the mark of the beast has nearly faded in July. Those topics have gently resurfaced in August with the spiritual interpretations of this pandemic at the front today.
 
-![alt_text]()
-<div ><img src="graphs/topics_contribution_over time.png" alt="..."></div>
+
+<div style="text-align:center"><img src="graphs/topics_contribution_over time.png" alt="..."></div>
 
 

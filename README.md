@@ -1,12 +1,12 @@
 # What do people on YouTube think about a COVID-19 vaccine? 
 ##  November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
-<div style="text-align:center"><img src="graphs/word_cloud.png" alt="..."></div>
+<p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 
 
 This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
-<div style="text-align:center"><img src="img/url.jpg" alt="..."></div>
+<p align="center"><img src="img/url.jpg" alt="..."></p>
 
 
 ## Data preprocessing and Latent Dirichlet Allocation(LDA) algorithm training
@@ -15,7 +15,7 @@ The removal of relative stop words have mainly been done with the TF-IDF (Term F
 
 After training and looking at the cohérence values,  we can clearly see that 3 is the optimal number of topics. 
 
-<div style="text-align:center"><img src="graphs/coherence_values.png" alt="..."></div>
+<p align="center"><img src="graphs/coherence_values.png" alt="..."></p>
 
 
 ## Most discussed topic
@@ -68,6 +68,6 @@ This topic is the most dominant and is most characterized by :
 Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comment sections of popular english YouTube videos. Opinions on a link between the vaccine and a new world order or the vaccine and the mark of the beast has nearly faded in July. Those topics have gently resurfaced in August with the spiritual interpretations of this pandemic at the front today.
 
 
-<div style="text-align:center"><img src="graphs/topics_contribution_over time.png" alt="..."></div>
+<p align="center"><img src="graphs/topics_contribution_over time.png" alt="..."></p>
 
 

@@ -4,7 +4,7 @@
 <p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 
 
-This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
+This study has been done on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
 <p align="center"><img src="img/url.jpg" alt="..."></p>
 
@@ -29,12 +29,12 @@ On the MDS grah we can see a clear separation between those three topics. **Sali
 
 
 ## Labeling the topics 
-After reading the **top 20** most representative documents(comments) for each topic:
+After reading the **top 20** most representative documents(comments) of each topic:
 
 ### Topic 0 (1% of all comments): New World Order, US Election and Bill Gates
 The most salient word is **« Trump »** followed by **« Pfizer »**, **« Bill »** and **« gate »**.
-This topic is characterized by :
--	People saying post american election time will be the beginning of a new world order because Biden won.
+This topic is characterized by:
+-	People saying post american elections time will be the beginning of a new world order because Biden won.
 -	The pandemic was planned by Bill Gates with Event 201
 -	People affirming that Big pharma is not to be trusted since Pfizer claimed a 90% vaccine effectiveness but sold 60% of their stock afterwards
 
@@ -43,7 +43,7 @@ This topic is characterized by :
 
 ### Topic 1(2% of all comments): COVID-19 vaccine and the mark of the beast
 The most salient word is **« god »**, followed by  **« mark »**, **« jesus »** and **« chip »**.
-This topic is characterized by :
+This topic is characterized by:
 -	People telling others to not take the vaccine since it is the mark of the beast
 -	People saying the vaccine will alter people’s dna
 -	People saying Jesus is the way if people want to be saved
@@ -52,8 +52,8 @@ This topic is characterized by :
 
 
 ### Topic 2 (97% of all comments): Vaccine skepticism
-Without any surprise the most salient word is **« vaccine »**.
-This topic is the most dominant and is most characterized by :
+Without any surprise, the most salient word is **« vaccine »**.
+This topic is the most dominant and is most characterized by:
 -	A reluctancy to take the vaccine especially because it is fast-paced.
 -	People contending that the vaccine cannot stop the transmission of the virus.
 -	Disapproval of genetic engineering (mRNA).
@@ -65,7 +65,7 @@ This topic is the most dominant and is most characterized by :
 
 ## Topic contribution over time
 
-Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comment sections of popular english YouTube videos. Opinions on a link between the vaccine and a new world order or the vaccine and the mark of the beast has nearly faded in July. Those topics have gently resurfaced in August with the spiritual interpretations of this pandemic at the front today.
+Over a 7 month span, vaccine skepticsm has been the prevalent sentiment in comment sections of popular english YouTube videos. Opinions about a link between the vaccine and a new world order or one between the vaccine and the mark of the beast has nearly faded in July. Those topics have gently resurfaced in August with the spiritual interpretations of this pandemic.
 
 
 <p align="center"><img src="graphs/topics_contribution_over time.png" alt="..."></p>

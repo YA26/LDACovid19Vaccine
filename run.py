@@ -75,7 +75,7 @@ data_preprocessor = DataPreprocessor(language="english",
 #Keeping the most relevant terms in each document with tf-idf
 data_filtered, scraped_data_cleansed = data_preprocessor.filter_text_with_tf_idf(data=scraped_data, 
                                                                                  text_column="text",
-                                                                                 quartile_perct=.25)
+                                                                                 quantile_perct=.25)
 pickle.dump(scraped_data_cleansed, open(join("saved_data","scraped_data_cleansed.pkl"), 'wb'))
 
 #Lemmatizing the data
@@ -166,8 +166,6 @@ t_c.get_figure().savefig(join("graphs","topic_contributions.png"))
 
 #LDA visualization
 dataviz.lda_viz(ldamodel, corpus, dictionary)
-
-
 
 #Opinion analysis over time
 date_dom_topic = date_dom_topic.rename(columns={"Dominant_Topic":"Frequency"})

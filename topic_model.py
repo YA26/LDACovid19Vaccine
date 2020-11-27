@@ -72,11 +72,11 @@ class DataPreprocessor():
                 data_copy = data_copy.drop(id_)
                 continue
       
-            #Finding the quartile
-            quartile = np.quantile(positive_tf_idfs, quantile_perct) 
+            #Finding the quantile
+            quantile = np.quantile(positive_tf_idfs, quantile_perct) 
             
             #Sorting words by value and keeping only those that are relevant
-            relevant_words = df[df["TF-IDF"]>=quartile].index.to_list()
+            relevant_words = df[df["TF-IDF"]>=quantile].index.to_list()
 
             #Removing special tokens that tfIdf wasn't able to handle
             relevant_words = self.remove_special_tokens(" ".join(relevant_words))      

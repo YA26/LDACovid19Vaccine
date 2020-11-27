@@ -1,13 +1,13 @@
 # What do people on YouTube think about a COVID-19 vaccine? 
-# Topic Modeling (LDA) on comments of popular and relevant YouTube videos
+##  November 25th of  2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
-![alt_text](graphs/word_cloud.png)
+<img align="center" src="graphs/word_cloud.png" alt="...">
 
-**Date: November 25th of  2020**
 
 This study has been realized on a sample of **58532 comments** scraped from the most popular and relevant videos over the last **7 months** (since the beginning of the pandemic in the western world). The aim was to be able to identify tangible sentiments as it pertains to the **potential effectiveness**, the **receptiveness** or even the **feasability** of a COVID-19 Vaccine.  The channels hosting the videos are mainly from the **US**. American channels are viewed worldwide, so this work is not an opinion mining task that is exclusive to them.
 
 <img align="center" src="img/url.jpg" alt="...">
+
 
 ## Data preprocessing and Latent Dirichlet Allocation(LDA) algorithm training
 
@@ -16,6 +16,7 @@ The removal of relative stop words have mainly been done with the TF-IDF (Term F
 After training and looking at the cohérence values,  we can clearly see that 3 is the optimal number of topics. 
 
 ![alt_text](graphs/coherence_values.png) 
+
 
 ## Most discussed topic
 Topic number 2 is overwhelmingly the most discussed topic with a dominance in 96.7% of all comments.
@@ -38,7 +39,8 @@ This topic is characterized by :
 -	People affirming that Big pharma is not to be trusted since Pfizer claimed a 90% vaccine effectiveness but sold 60% of their stock afterwards
 
 ![alt_text](graphs/topic_1_contribution.png)
-  
+
+
 ### Topic 1(2% of all comments): COVID-19 vaccine and the mark of the beast
 The most salient word is **« god »**, followed by  **« mark »**, **« jesus »** and **« chip »**.
 This topic is characterized by :
@@ -47,6 +49,7 @@ This topic is characterized by :
 -	People saying Jesus is the way if people want to be saved
 
 ![alt_text](graphs/topic_2_contribution.png)
+
 
 ### Topic 2 (97% of all comments): Vaccine skepticism
 Without any surprise the most salient word is **« vaccine »**.

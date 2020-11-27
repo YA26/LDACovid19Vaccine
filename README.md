@@ -1,5 +1,5 @@
 # What do people on YouTube think about a COVID-19 vaccine? 
-#### November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
+### November 25th 2020: Topic Modeling (LDA) on comments of popular and relevant YouTube videos
 
 <p align="center"><img src="graphs/word_cloud.png" alt="..."></p>
 

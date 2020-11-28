@@ -35,7 +35,7 @@ date_dom_topic = pickle.load(open(join("saved_data","date_dom_topic.pkl"), "rb")
 """
 API_KEY="AIzaSyDMKlhGEb0UwKnKNiGyt-Jn0fbJktj_t-A"
 FIREFOX_PATH="C:/Program Files/Mozilla Firefox/firefox.exe"
-DRIVER_PATH="C:/Users/bb/Desktop/scraping_youtube_comments/gecko_driver/geckodriver.exe"
+DRIVER_PATH=DRIVER_PATH=join("gecko_driver","geckodriver.exe")
 
 #Youtube scraper object
 scraper = YScraper()
@@ -55,7 +55,7 @@ urls = scraper.scrape_youtube_search(API_KEY,
                                      queries,
                                      FIREFOX_PATH, 
                                      DRIVER_PATH,
-                                     filter_=filters["recent"])
+                                     filter_=filters["popular"])
 urls.to_csv(join("data", "vax_trust_urls.csv"))
 scraped_data = scraper.scrape_youtube_comments(urls=urls, 
                                               n_comments=-1, 
@@ -118,7 +118,7 @@ sent_topics_df = model.get_dominant_topics(ldamodel=ldamodel,
 pickle.dump(sent_topics_df, open(join("saved_data","sent_topics_df.pkl"), 'wb'))
 
 #Getting the most representative document(s) per topic
-representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=20)
+representative_docs = model.get_representative_documents(sent_topics_df, top_n_documents=50)
 pickle.dump(representative_docs, open(join("saved_data","representative_docs.pkl"), 'wb'))
 
 #Getting the most discussed topics 
@@ -147,7 +147,7 @@ dataviz.plot_coherence_values(num_topics=NUM_TOPICS,
                               coherence_values=coherence_values,
                               path_to_save="graphs")
 #Topic WordCloud
-labels = ["?","?", "?"]
+labels = ["US Election","Bible", "Vaccine"]
 dataviz.plot_word_cloud(ldamodel=ldamodel,
                         width=2500,
                         height=1800,
@@ -175,5 +175,6 @@ date_dom_topic.drop("sort", inplace=True, axis=1)
 date_dom_topic = date_dom_topic.pivot(index='time', columns='Dominant_Topic', values='Frequency').reindex(date_dom_topic['time'].to_list())
 date_dom_topic = date_dom_topic.drop_duplicates()
 date_dom_topic.plot(kind='bar', stacked=True)
+
 
 

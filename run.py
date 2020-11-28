@@ -33,7 +33,7 @@ date_dom_topic = pickle.load(open(join("saved_data","date_dom_topic.pkl"), "rb")
 ############# 1-SCRAPING DATA ##############
 ############################################
 """
-API_KEY="AIzaSyDMKlhGEb0UwKnKNiGyt-Jn0fbJktj_t-A"
+API_KEY="Need A Youtube API Key. Can be obtained from  a google account"
 FIREFOX_PATH="C:/Program Files/Mozilla Firefox/firefox.exe"
 DRIVER_PATH=DRIVER_PATH=join("gecko_driver","geckodriver.exe")
 
